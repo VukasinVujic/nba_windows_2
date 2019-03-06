@@ -11,6 +11,7 @@
 
 
     <div class="container">
+        @include('partials.nav')
         @yield('content')
     </div>
     

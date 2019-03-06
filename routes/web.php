@@ -17,6 +17,9 @@
 
 Route::get('/teams/{id}', 'TeamsController@show')->name('singleTeam');
 Route::get('/teams', 'TeamsController@index')->name('allTeams');
+
 Route::get('/players/{id}' , 'PlayersController@show')->name('singlePlayer');
 Route::get('/', 'TeamsController@index');
+
+Route::get('/register' , 'RegistersController@create')->name('register');
 
